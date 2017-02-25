@@ -30,8 +30,8 @@
 		if ($endpoint == '') {
 			// setcookie("color","red");
 			// echo $_COOKIE["color"];
+			return include('../../index.html');
 			return include('./build/index.html');
-			return;
 		} 
 		if ($endpoint == 'news.php') {
 			include('news.php');
