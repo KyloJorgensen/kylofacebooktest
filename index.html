@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="name">
+hello
+</div>
+
+<div id="waether-temp">
+  nothing
+</div>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		window.fbAsyncInit = function() {
+	    	FB.init({
+		      	appId      : '1551677151527898',
+		      	xfbml      : true,
+		      	version    : 'v2.8'
+		    });
+		    FB.AppEvents.logPageView();
+		};
+
+		(function(d, s, id){
+		    var js, fjs = d.getElementsByTagName(s)[0];
+		    if (d.getElementById(id)) {return;}
+		    js = d.createElement(s); js.id = id;
+		    js.src = "http://connect.facebook.net/en_US/sdk.js";
+		    fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));		
+
+
+		FB.api("/v2.8/464127610408240/feed", 'get', {}, function() {
+			console.log(response);
+		})
+	</script>
+	<script>
+		console.log('here');
+		console.log($('#name').html()|| 'error'); 
+
+
+
+
+
+		$.ajax({
+		  url: "http://graph.facebook.com/v2.8/464127610408240/feed",
+		  success: function( result ) {
+		    console.log(result)
+		    $( "#weather-temp" ).html( "<strong>stuff" + "</strong> degrees" );
+		  }
+		});
+
+		console.log('here');
+	</script>
+</body>
+</html>
