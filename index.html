@@ -41,7 +41,12 @@ hello
 		console.log('here');
 		console.log($('#name').html()|| 'error'); 
 
-
+		$.ajax({
+			url: "http://graph.facebook.com//oauth/access_token?client_id={1551677151527898}&client_secret={684bf222a765536629f951299834e616}&grant_type=client_credentials",
+			success: function( result ) {
+		    	console.log(result);
+		  	}
+		})
 
 
 

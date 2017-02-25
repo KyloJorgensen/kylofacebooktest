@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Pacifico');
+body {
+  font-family: "Lato", sans-serif;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+h2,
+h4 {
+  color: #e5474b;
+}
+#header-img {
+  width: 100%;
+  height: 350px;
+}
+.header-wrapper {
+  background-color: #1c1c1c;
+  padding: 32px;
+}
+.header-wrapper h1 {
+  color: #e5474b;
+  font-family: 'Pacifico', cursive;
+}
+.header-wrapper a {
+  padding-left: 100px;
+  color: #ffffff;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  border-radius: 0;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: .8em;
+  font-weight: 700;
+  height: 3.5em;
+  line-height: 3.65em;
+  padding: 0 2.25em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  background-color: #5a5a5a;
+  color: #ffffff !important;
+}
+input[type="submit"].alt,
+input[type="reset"].alt,
+input[type="button"].alt,
+button.alt,
+.button.alt {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px #e5474b;
+  color: #e5474b !important;
+}
+#footer input[type="submit"].alt,
+#footer input[type="reset"].alt,
+#footer input[type="button"].alt,
+#footer button.alt,
+#footer .button.alt {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px #fff;
+  color: #ffffff !important;
+}
+.main-news-section {
+  width: 50%;
+  float: right;
+  border-style: solid;
+  border-width: medium;
+  border-color: red;
+  margin: 10px;
+  padding: 32px;
+}
+.page-changer {
+  padding: 15px;
+}
+.page-changer .next {
+  float: right;
+  width: 33.3%;
+}
+.page-changer .previous {
+  float: left;
+  width: 33.3%;
+}
+.page-changer p {
+  text-align: center;
+  margin: 10px auto;
+  width: 33.3%;
+  display: inline-block;
+}
+.news-entry,
+.add-news-entry {
+  padding: 15px;
+}
+.news-entry h4,
+.add-news-entry h4,
+.news-entry .admin input,
+.add-news-entry .admin input {
+  display: inline-block;
+}
+.news-entry h5,
+.add-news-entry h5,
+.news-entry .admin p,
+.add-news-entry .admin p,
+.news-entry .admin .right,
+.add-news-entry .admin .right {
+  float: right;
+  display: inline-block;
+}
+.news-entry .public .admin-edit,
+.add-news-entry .public .admin-edit {
+  display: none;
+}
+.news-entry .public p,
+.add-news-entry .public p {
+  padding: 15px;
+}
+.news-entry textarea,
+.add-news-entry textarea {
+  width: 100%;
+  height: 200px;
+}
+.admin-login-form {
+  padding: 50px;
+}
+.admin-login-form > * {
+  margin: 10px 0;
+}
+.footer-wrapper {
+  background-color: #e5474b;
+  padding: 64px;
+}
+.footer-wrapper a {
+  color: #ffffff;
+}
+/*# sourceMappingURL=brad-ashwroth.1.0.0.css.map */
