@@ -42,7 +42,7 @@ hello
 		console.log($('#name').html()|| 'error'); 
 
 		$.ajax({
-			url: "http://graph.facebook.com//oauth/access_token?client_id={1551677151527898}&client_secret={684bf222a765536629f951299834e616}&grant_type=client_credentials",
+			url: "https://graph.facebook.com//oauth/access_token?client_id={1551677151527898}&client_secret={684bf222a765536629f951299834e616}&grant_type=client_credentials",
 			success: function( result ) {
 		    	console.log(result);
 		  	}
@@ -51,7 +51,7 @@ hello
 
 
 		$.ajax({
-		  url: "http://graph.facebook.com/v2.8/464127610408240/feed",
+		  url: "https://graph.facebook.com/v2.8/464127610408240/feed",
 		  success: function( result ) {
 		    console.log(result)
 		    $( "#weather-temp" ).html( "<strong>stuff" + "</strong> degrees" );
